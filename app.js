@@ -1,56 +1,3 @@
-// let Rand = ()=>{
-//     return Math.floor((Math.random() * 100) + 1);
-// }
-// let createArr = (a,b,c) =>{
-//     return [a,b,c];
-// };
-
-// let pushArr = (arr,x)=>{
-//    let getArr = arr;
-//    arr.push(x);
-//    return getArr;
-// }
-// console.log(pushArr(createArr(Rand(),Rand(),Rand()),Rand()));
-
-// let o ={
-//     firstName : 'Bobo',
-//     lastName : 'bill',
-//     testName : function(x){
-//         return `Hello ${this.firstName} ${this.lastName}${x}`;
-//     }
-// }
-// let newFirstName = {firstName:'jojo'};
-// let newLastName = {lastName : 'sila'};
-// console.log(o.testName.apply(newFirstName,['   fgf']));
-// let newName = o.testName.bind(newFirstName, 'hgfhgfhg');
-// console.log(o.testName());
-// console.log(newName());
-
-// let startCar = function(model){
-//     this.car = model;
-//     this.start = function(){
-//         console.log(`You just start ${this.car}`);
-//     };
-// }
-
-// let bmwCar = new startCar('bmw');
-// bmwCar.start();
-
-
-// let jsonFile = '{ "name":"John", "age":30, "city":"New York"}';
-
-// console.log(jsonFile);
-// console.log(JSON.parse(jsonFile));
-
-
-// let convertJson = JSON.parse(jsonFile);
-
-// let arrTest = ['hello','lol','3','4','5','6','7'];
-// let result = arrTest.filter(number => number >= 5);
-// console.log(result);4
-
-
-
 // let arr = ['1','2','3','4','5','6'];
 
 // function shuffle(array) {
@@ -191,8 +138,8 @@ class Circle {
             console.log(this.topPoint);
         }
         else{
-            this.topPoint = -140;
-            this.leftPoint = 130;
+            this.cir.style.marginTop = -140;
+            this.cir.style.marginLeft = 130;
             console.log('work');
         }
     }
@@ -208,7 +155,7 @@ circleTwo.create();
 setInterval(function(){
     circle.move();
     circleTwo.move();
-    },50);
+    },10);
 
 
 
